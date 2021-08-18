@@ -1,0 +1,131 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>Contact</title>
+        
+        <link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="linericon/style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body{
+		background-image:url("img/jar.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+		}
+		
+			
+		</style>
+    </head>
+<body>
+       <script>
+	   function validation()
+	   {
+			var name=document.getElementById("name").value;
+			var email=document.getElementById("email").value;
+			var subject=document.getElementById("subject").value;
+			var message=document.getElementById("message").value;
+			
+			if(name=="")
+			{
+				alert("Please Enter Name");
+			}
+			else if(email=="")
+			{
+				alert("Please Enter Email Id");
+			}
+			else if(subject=="")
+			{
+				alert("Please Enter subject");
+			}
+			else if(message=="")
+			{
+				alert("Please Write Message");
+			}
+			else 
+			{
+				alert("Message Send Successfully");
+			}
+	   }
+	   </script>
+    
+    <header class="headarea">
+        <div class="main">
+            <div class="box">
+                <nav class="navigation navigation-expand-lg navigation-light">
+                    <div class="box">
+          
+                        <a class="navigation-brand logo_h" href="index.html" style="color:#56418f;font-size:30px;font-weight:bold;">RAISE FUNDS</a>
+                        <button class="navigation-toggler" type="button" data-toggle="collapse" data-target="#navigationSupportedContent" aria-controls="navigationSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="collapse navigation-collapse offset" id="navigationSupportedContent">
+                            <ul class="nav navigation-nav menu_nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html" style="color:black;" onMouseOver="style.color='blue'"onMouseOut="this.style.color='black'">Home</a></li> 
+                                <li class="nav-item"><a class="nav-link" href="about.html" style="color:black;" onMouseOver="style.color='blue'"onMouseOut="this.style.color='black'">About</a></li> 
+                                <li class="nav-item active"><a class="nav-link">Contact</a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="contact_area section_gap" style="padding:150px 70px 20px 70px;">
+            <div class="row" style="justify-content:space-around; background-color: rgb(231,218,218, 0.8); padding: 50px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; border-radius: 20px;">
+                <div class="col-lg-5">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="fa fa-home"></i>
+                            <h6 style="color:#000;">Aurangabaad, Maharashtra</h6>
+              
+                        </div><br>
+                        <div class="info_item">
+                            <i class="fa fa-phone"></i>
+                            <h6><a href="#" style="color:#000;">7218886809</a></h6>
+                     
+                        </div><br>
+                        <div class="info_item">
+                            <i class="fa fa-envelope"></i>
+                            <h6><a href="#" style="color:#000;">Support@donate.com</a></h6>
+                            
+                        </div><br>
+                    </div>
+                </div>
+                <div class="col-lg-6" >
+                    <form class="row contact_form" id="contactForm" novalidate="novalidate">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                            </div>
+                        </div>
+                            
+                        <div class="col-md-12 text-right">
+                            <button type="submit" value="submit" style="background-color: #56418f; color: white;" class="btn" onclick="validation()" >Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+      </body>
+</html>
